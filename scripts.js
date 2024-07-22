@@ -4,15 +4,12 @@ let pokemonList = [
   { name: 'Venusaur', height: 3, types: ['bug', 'poison'] }
 ];
 
-//“Caterpie (height: 6)”.
-//Wow, be carreful
-for (let i = 0; i < pokemonList[i].height; i++) {
+for (let i = 0; i < pokemonList.length; i++) {
   if (pokemonList[i].height < 3) {
-    console.log(pokemonList[i].name + " - is a baby") ;
+    document.write(pokemonList[i].name + " - is a baby<br>");
   } else if (pokemonList[i].height < 5 && pokemonList[i].height > 3) {
-    console.log(pokemonList[i].name + " - no worries");
+    document.write(pokemonList[i].name + " - no worries<br>");
   } else {
-    console.log(pokemonList[i].name + " - Wow, be carreful");
+    document.write(pokemonList[i].name + " - Wow, be careful<br>");
   }
 }
-document.write(console.log);

@@ -1,8 +1,23 @@
-let pokemonList = [
-  { name: 'Caterpie', height: 6, types: ['monster', 'dragon'] },
-  { name: 'Charmeleon', height: 2, types: ['grass', 'monster'] },
-  { name: 'Venusaur', height: 3, types: ['bug', 'poison'] }
-];
+let pokemonRepository = (function () {
+  let pokemonList = [
+    { name: 'Caterpie', height: 6, types: ['monster', 'dragon'] },
+    { name: 'Charmeleon', height: 2, types: ['grass', 'monster'] },
+    { name: 'Venusaur', height: 3, types: ['bug', 'poison'] }
+  ];
+
+  function getAll() {
+    return pokemonList;
+  }
+
+  function add(item) {
+    pokemonList.push(item);
+  }
+
+  return {
+    getAll: getAll,
+    add: add
+  };
+})();
 
 function myLoopFunction(pokemon) {
   if (pokemon.height < 3) {
@@ -14,4 +29,4 @@ function myLoopFunction(pokemon) {
   }
 }
 
-pokemonList.forEach(myLoopFunction);
+pokemonRepository.getAll().forEach(myLoopFunction);

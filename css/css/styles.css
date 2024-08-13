@@ -33,6 +33,7 @@
   height: auto;
 }
 
+<<<<<<< Updated upstream
 .btn-fixed-width {
   width: 200px;
   margin: 5px;
@@ -49,18 +50,47 @@
   border: none;
 }
 
+=======
+.btn-custom-color {
+  background-color: #f06fdf;
+  /* Custom background color */
+  color: rgb(0, 0, 0);
+  /* Text color */
+  border: none;
+  /* Remove border */
+}
+
+>>>>>>> Stashed changes
 .btn:focus {
   outline: none;
 }
 
+<<<<<<< Updated upstream
 .list-group-item {
   border-radius: 0;
   border: 1px solid #ccc;
   margin-bottom: 5px;
+=======
+
+
+.list-group {
+  flex-direction: row;
+  border-radius: 0;
+  border: 1px solid #ccc;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+.list-group-item {
+  flex: 1 1 200px;
+  margin-bottom: 10px
+>>>>>>> Stashed changes
 }
 
 .list-group-item-action:hover {
   background-color: #f8d7f7;
+<<<<<<< Updated upstream
   color: #000;
 }
 
@@ -70,4 +100,7 @@
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+=======
+  color: #000
+>>>>>>> Stashed changes
 }

@@ -29,6 +29,7 @@ let pokemonRepository = (function () {
     ulElement.appendChild(listItem);
   }
 
+
   function loadList() {
     return fetch(apiUrl).then(function (response) {
       return response.json();
